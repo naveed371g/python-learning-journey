@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 city = "Sunnyvale"
-"""name = input("enter your name: ")
+name = input("enter your name: ")
 age = input("enter your age: ")
 print(f"my name is {name} and I am {age} years old")
 print(input("enter you name: "))"""
-"""
+
 print(f"I live in {city}")
 for i in range(5):
     print(f"\n{i}")
