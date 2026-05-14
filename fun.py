@@ -63,8 +63,73 @@ localvar = test()
 print(f"outside the function local: {localvar}")
 
 """
-
+""" 
 def print_message(message):
     print(f"Message: {message}")
     # No return statement
 print_message("Hello World")
+
+"""
+"""
+def celtofar(cel):
+    far = cel * 9/5 + 32
+    return far
+
+result = celtofar(5)
+print(result)
+
+def fartocel(far):
+    cel = (far - 32) * 5/9
+    return cel
+temp = input("Please enter temperature in Fahrenheit:")
+result = fartocel(float(temp))
+print(f"{result:.2f} degrees Celsius")
+
+"""
+"""
+print(f"\nExercise 5: Password Strength")
+password = input("Enter password: ")
+# print(f"Input: {password}")
+
+if len(password) < 8:
+    strength = "Weak"
+elif len(password) < 12:
+    strength = "Medium"
+else:
+    strength = "Strong"
+
+print(f"  Password: {'*' * len(password)}")
+print(f"  Strength: {strength}")
+
+"""
+"""
+def name(x,y):
+    z = x + y
+    print(z)
+x=int(input("Enter first number: "))
+y=int(input("Enter second number: "))
+name(x,y)
+"""
+"""
+#from lesson_1_basics import x
+
+
+def temp(x):
+    if x < 0:
+        print("its cold")
+    elif x > 40:
+        print("its hot")
+
+temp(-1)
+"""
+
+def temp(x):
+    if x < 0:
+        print("its cold")
+    elif x > 40:
+        print("its hot")
+    else:
+        print("its moderate")
+x=input("Press enter a number: ")
+temp(int(x))
+

@@ -212,6 +212,180 @@ else:
     print("Too young to drive")
 """)
 
+# ==================== CHAPTER 4 EXTRA PRACTICE ====================
+print("\n📚 CHAPTER 4: EXTRA CONTROL FLOW PRACTICE")
+print("-" * 50)
+
+# Practice 1: Grade calculator
+print("\nPractice 1: Grade Calculator")
+score = 85
+
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+print(f"  Score: {score}")
+print(f"  Grade: {grade}")
+
+# Practice 2: Number guessing logic
+print("\nPractice 2: Number Range Checker")
+secret_number = 42
+guess = 35
+
+if guess == secret_number:
+    print("  🎉 Correct!")
+elif abs(guess - secret_number) <= 5:
+    print("  🔥 Very close!")
+elif abs(guess - secret_number) <= 10:
+    print("  👍 Close")
+else:
+    print("  ❄️ Far off")
+
+# Practice 3: For loop with range
+print("\nPractice 3: Multiplication Table")
+number = 7
+for i in range(1, 6):
+    result = number * i
+    print(f"  {number} × {i} = {result}")
+
+# Practice 4: While loop with condition
+print("\nPractice 4: Countdown Timer")
+countdown = 5
+while countdown > 0:
+    print(f"  T-minus {countdown}...")
+    countdown -= 1
+print("  🚀 Launch!")
+
+# Practice 5: Nested loops
+print("\nPractice 5: Pattern Printing")
+for row in range(3):
+    line = ""
+    for col in range(row + 1):
+        line += "* "
+    print(f"  {line}")
+
+# Practice 6: List comprehension
+print("\nPractice 6: Even Numbers Filter")
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = [num for num in numbers if num % 2 == 0]
+print(f"  Original: {numbers}")
+print(f"  Even: {even_numbers}")
+
+# Practice 7: Break and continue
+print("\nPractice 7: Loop Control")
+for i in range(1, 11):
+    if i == 7:
+        print(f"  Skipping {i} (continue)")
+        continue
+    if i == 9:
+        print(f"  Stopping at {i} (break)")
+        break
+    print(f"  Processing {i}")
+
+# Practice 8: Multiple conditions
+print("\nPractice 8: Login Validation")
+username = "admin"
+password = "secret123"
+is_active = True
+
+if username == "admin" and password == "secret123" and is_active:
+    print("  ✅ Login successful - Admin access")
+elif username and password:
+    print("  ⚠️ Login successful - Limited access")
+else:
+    print("  ❌ Login failed")
+
+# ==================== DUMMY EXAMPLES ====================
+print("\n📚 DUMMY EXAMPLES FOR PRACTICE")
+print("-" * 50)
+
+# Dummy 1: Simple variables
+print("\nDummy 1: Basic Variables")
+name = "John Doe"
+age = 30
+city = "New York"
+print(f"  Name: {name}")
+print(f"  Age: {age}")
+print(f"  City: {city}")
+
+# Dummy 2: Simple math
+print("\nDummy 2: Basic Math")
+x = 15
+y = 3
+print(f"  {x} + {y} = {x + y}")
+print(f"  {x} - {y} = {x - y}")
+print(f"  {x} * {y} = {x * y}")
+print(f"  {x} / {y} = {x / y}")
+
+# Dummy 3: String operations
+print("\nDummy 3: String Operations")
+first_name = "Alice"
+last_name = "Smith"
+full_name = first_name + " " + last_name
+print(f"  First: {first_name}")
+print(f"  Last: {last_name}")
+print(f"  Full: {full_name}")
+
+# Dummy 4: Simple list
+print("\nDummy 4: Basic List")
+fruits = ["apple", "banana", "orange", "grape"]
+print(f"  Fruits: {fruits}")
+print(f"  First fruit: {fruits[0]}")
+print(f"  Last fruit: {fruits[-1]}")
+print(f"  Number of fruits: {len(fruits)}")
+
+# Dummy 5: Simple if statement
+print("\nDummy 5: Basic If Statement")
+temperature = 25
+if temperature > 20:
+    print("  It's warm today!")
+else:
+    print("  It's cold today!")
+
+# Dummy 6: Simple for loop
+print("\nDummy 6: Basic For Loop")
+colors = ["red", "green", "blue"]
+for color in colors:
+    print(f"  Color: {color}")
+
+# Dummy 7: Simple while loop
+print("\nDummy 7: Basic While Loop")
+count = 0
+while count < 3:
+    print(f"  Count: {count}")
+    count += 1
+
+# Dummy 8: Simple function
+print("\nDummy 8: Basic Function")
+def greet(person):
+    return f"Hello, {person}!"
+
+message = greet("World")
+print(f"  {message}")
+
+# Dummy 9: Simple boolean
+print("\nDummy 9: Boolean Logic")
+is_raining = True
+has_umbrella = False
+
+if is_raining and not has_umbrella:
+    print("  You'll get wet!")
+else:
+    print("  You'll stay dry!")
+
+# Dummy 10: Simple input/output
+print("\nDummy 10: Input/Output Simulation")
+user_input = "Python"
+print(f"  You entered: {user_input}")
+print(f"  Length: {len(user_input)} characters")
+
 print("\n" + "=" * 60)
 print("EXAMPLES COLLECTION COMPLETE!")
 print("💡 Practice these examples tonight!")
