@@ -21,14 +21,19 @@ pipeline {
                 sh 'bash stock.sh'
             }
         }
+        stage('Run Calendar Display') {
+            steps {
+                sh 'python3 calendar_display.py'
+            }
+        }
     }
 
     post {
         success {
-            echo 'Stock analysis pipeline completed successfully!'
+            echo 'Pipeline completed successfully!'
         }
         failure {
-            echo 'Stock analysis pipeline failed!'
+            echo 'Pipeline failed!'
         }
     }
 }
