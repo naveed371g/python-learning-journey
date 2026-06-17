@@ -5,4 +5,4 @@ has_python=input("enter language :")
 if has_python == "Python":
 	print("30% chance")
 else:
-	print("no change")
+	print("no chance")
