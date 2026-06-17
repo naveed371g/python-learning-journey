@@ -1,0 +1,12 @@
+
+cat > /var/jenkins_home/init.groovy.d/reset_password.groovy << 'EOF'
+import jenkins.model.*
+import hudson.security.*
+
+def instance = Jenkins.getInstance()
+def hudsonRealm = new HudsonPrivateSecurityRealm(false)
+hudsonRealm.createAccount("admin", "newpassword123")
+instance.setSecurityRealm(hudsonRealm)
+instance.save()
+EOF
+
