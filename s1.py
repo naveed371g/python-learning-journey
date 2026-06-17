@@ -3,7 +3,7 @@ city = "Sunnyvale"
 name = input("enter your name: ")
 age = input("enter your age: ")
 print(f"my name is {name} and I am {age} years old")
-print(input("enter you name: "))"""
+print(input("enter you name: "))
 
 print(f"I live in {city}")
 for i in range(5):
@@ -19,8 +19,6 @@ print(len(text))
 
 fruits = [ "angoor", "malta", "aam"]
 print(fruits[-2])
-"""
-"""
 person = {
     "name" : "bilal",
     "age" : 20,
@@ -43,7 +41,6 @@ if person["name"] == "naveed":
     print("name is naveed")
 else:
     print("name is not naveed")
-"""
 def test():
     print("test1")
     return "test"

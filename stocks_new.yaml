@@ -1,0 +1,60 @@
+# Stock Portfolio Configuration
+# This file contains a new stock portfolio for profit/loss analysis
+
+portfolio:
+  - symbol: GE
+    shares: 12
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: GEHC
+    shares: 4
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: GEV
+    shares: 3
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: GNPX
+    shares: 1
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: HPQ
+    shares: 50
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: INTC
+    shares: 50
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: M
+    shares: 100
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: PCG
+    shares: 100
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: SMCI
+    shares: 50
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+
+  - symbol: NOK
+    shares: 50
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+
+
+# Analysis settings
+settings:
+  analysis_period_days: 30  # Number of days to analyze
+  start_date: "2026-04-01"  # Override automatic calculation
+  end_date: null  # null means today

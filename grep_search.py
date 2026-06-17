@@ -10,5 +10,7 @@ with open(filename, 'r') as file:
            # print(f"FOUND:\n {line.rstrip()}")
             print(f"FOUND: {line}")
 # Reading entire file
+"""
 with open("temp", "r") as file:
         print(f"reading file:\n {file.read()}")
+        """

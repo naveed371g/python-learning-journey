@@ -1,0 +1,17 @@
+
+
+class stocks:
+	def __init__(self, stock1, value):
+		self.stock1 = stock1
+		self.value = value
+
+	def stockup(self):
+		return f" today {self.stock1} is up {self.value} "
+
+ST1 = stocks("csco", 10)
+ST2 = stocks("intel", 100)
+
+print(ST1.stockup())
+print(ST2.stockup())
+
+

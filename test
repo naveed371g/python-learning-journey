@@ -1,0 +1,16 @@
+
+class temp:
+	def __init__(self, fruits, color):
+		self.fruits = fruits
+		self.color = color
+
+	def fruitcolor(self):
+		return (f" I like {self.fruits} which has {self.color} color")
+		
+
+fruit1 = temp("mango", "yellow")
+fruit2 = temp("grape", "green")
+
+print(fruit1.fruitcolor())
+print(fruit2.fruitcolor())
+

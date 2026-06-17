@@ -1,0 +1,16 @@
+
+
+class cook:
+	def __init__(self, today, food):
+		self.today =  today
+		self.food = food
+
+	def tocook(self):
+		return f" mama should cook {self.today} my favorite food {self.food}"
+
+wish1 = cook("monday", "aloo")
+wish2 = cook("friday", "meat")
+
+print(wish1.tocook())
+print(wish2.tocook())
+ 
