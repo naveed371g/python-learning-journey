@@ -1,0 +1,64 @@
+# Stock Portfolio Configuration
+# This file contains your stock portfolio for profit/loss analysis
+
+portfolio:
+  - symbol: DELL
+    shares: 1657
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: NTAP
+    shares: 651
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: AMD
+    shares: 400
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: MSFT
+    shares: 50
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: CLS
+    shares: 45
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: C
+    shares: 70
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: FMCC
+    shares: 245
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: AA
+    shares: 100
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: AAL
+    shares: 77
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: CSCO
+    shares: 100
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+    
+  - symbol: MS
+    shares: 10
+    purchase_price: 85.50
+    purchase_date: "2026-04-15"
+
+# Analysis settings
+settings:
+  analysis_period_days: 30  # Number of days to analyze
+  start_date: "2026-04-01"  # Override automatic calculation
+  end_date: null  # null means today
