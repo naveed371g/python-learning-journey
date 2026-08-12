@@ -16,6 +16,11 @@ pipeline {
                 sh 'pip3 install --user -q yfinance pyyaml tabulate pandas matplotlib numpy || true'
             }
         }
+        stage('Run Tests') {
+            steps {
+                sh 'python3 test_stock.py'
+            }
+        }
         stage('Run Stock Analysis') {
             steps {
                 sh 'bash stock.sh'
