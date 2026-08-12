@@ -519,7 +519,7 @@ class StockProfitLossAnalyzer:
 
     def export_daily_total_value(
         self,
-        csv_file='/Users/naveediqbal/daily_portfolio_value.csv'
+        csv_file=None
     ):
         """Record today's total Current Value into a daily monitoring table.
 
@@ -528,6 +528,10 @@ class StockProfitLossAnalyzer:
         same day, that day's value for the portfolio is overwritten.
         """
         import os
+        if csv_file is None:
+            base_dir = os.environ.get(
+                'STOCK_MONITOR_DATA', os.path.expanduser('~'))
+            csv_file = os.path.join(base_dir, 'daily_portfolio_value.csv')
 
         # Compute total current value from the Portfolio Summary data
         total_current_value = round(sum(
