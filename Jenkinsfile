@@ -31,6 +31,11 @@ pipeline {
                 sh 'python3 calendar_display.py'
             }
         }
+        stage('Run Simple test') {
+            steps {
+                sh 'python3 t1.py'
+            }
+        }
     }
 
     post {
