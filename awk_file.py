@@ -7,14 +7,14 @@ import sys
 filename = sys.argv[1]
 x = int(sys.argv[2])
 try:
-    with open(filename, 'r') as f:
-        for line in f:
+    with open(filename, 'r') as file:
+        for line in file:
             # Split line by whitespace and print first column
             fields = line.split()
+            print(fields)
             if fields:
                 print(fields[x])
 except FileNotFoundError:
     print(f"Error: File '{filename}' not found")
 except Exception as e:
     print(f"Error: {e}")
-

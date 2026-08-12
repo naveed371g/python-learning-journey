@@ -1,0 +1,5 @@
+# QA Automation Test Run Log
+# Format: timestamp | suite | test_name | result | duration_ms | message
+2026-07-18T09:00:01 | auth      | test_login_valid_user        | PASS | 120  |
+2026-07-18T09:00:02 | auth      | test_login_wrong_password    | PASS | 95   |
+2026-07-18T09:00:03 | auth      | test_login_locked_account    | FAIL | 210  | AssertionError: expected 423 got 500

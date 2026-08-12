@@ -1,0 +1,10 @@
+host: "127.0.0.1"            # Docker SSH container (localhost)
+port: 2222                   # mapped host port -> container port 22
+username: "naveed"          # SSH username
+password: "your_password"    # SSH password
+
+commands:
+  - df -ah                  # disk usage
+  - uptime                  # system uptime
+  - free -h                 # memory usage
+  - whoami                  # current user

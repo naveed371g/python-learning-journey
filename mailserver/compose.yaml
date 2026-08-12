@@ -1,0 +1,29 @@
+services:
+  mailserver:
+    image: ghcr.io/docker-mailserver/docker-mailserver:latest
+    container_name: mailserver
+    # Set your fully-qualified hostname here (must match your MX / PTR records)
+    hostname: mail.example.com
+    env_file: mailserver.env
+    # Uncomment/adjust ports as needed. Left column is host, right is container.
+    ports:
+      - "25:25"     # SMTP  (inbound mail from other servers)
+      - "143:143"   # IMAP4 (unencrypted / STARTTLS)
+      - "465:465"   # ESMTP (implicit TLS / submissions)
+      - "587:587"   # ESMTP (explicit TLS / submission)
+      - "993:993"   # IMAP4 (implicit TLS)
+    volumes:
+      - ./docker-data/dms/mail-data/:/var/mail/
+      - ./docker-data/dms/mail-state/:/var/mail-state/
+      - ./docker-data/dms/mail-logs/:/var/log/mail/
+      - ./docker-data/dms/config/:/tmp/docker-mailserver/
+      - /etc/localtime:/etc/localtime:ro
+    restart: always
+    stop_grace_period: 1m
+    # Required for Fail2Ban to manipulate the host firewall (optional)
+    cap_add:
+      - NET_ADMIN
+    healthcheck:
+      test: "ss --listening --tcp | grep -P 'LISTEN.+:smtp' || exit 1"
+      timeout: 3s
+      retries: 0

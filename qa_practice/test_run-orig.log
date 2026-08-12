@@ -1,0 +1,20 @@
+# QA Automation Test Run Log
+# Format: timestamp | suite | test_name | result | duration_ms | message
+2026-07-18T09:00:01 | auth      | test_login_valid_user        | PASS | 120  |
+2026-07-18T09:00:02 | auth      | test_login_wrong_password    | PASS | 95   |
+2026-07-18T09:00:03 | auth      | test_login_locked_account    | FAIL | 210  | AssertionError: expected 423 got 500
+2026-07-18T09:00:04 | auth      | test_logout                  | PASS | 60   |
+2026-07-18T09:00:05 | auth      | test_password_reset          | SKIP | 0    | reset service not deployed in staging
+2026-07-18T09:00:06 | cart      | test_add_item                | PASS | 140  |
+2026-07-18T09:00:07 | cart      | test_remove_item             | PASS | 130  |
+2026-07-18T09:00:08 | cart      | test_update_quantity         | FAIL | 305  | TimeoutError: element not clickable after 5s
+2026-07-18T09:00:09 | cart      | test_cart_persistence        | FAIL | 180  | AssertionError: cart empty after reload
+2026-07-18T09:00:10 | checkout  | test_apply_coupon            | PASS | 220  |
+2026-07-18T09:00:11 | checkout  | test_payment_success         | PASS | 640  |
+2026-07-18T09:00:12 | checkout  | test_payment_declined_card   | FAIL | 590  | AssertionError: expected error banner not shown
+2026-07-18T09:00:13 | checkout  | test_tax_calculation         | PASS | 110  |
+2026-07-18T09:00:14 | checkout  | test_guest_checkout          | SKIP | 0    | feature flag disabled
+2026-07-18T09:00:15 | search    | test_keyword_search          | PASS | 175  |
+2026-07-18T09:00:16 | search    | test_empty_results           | PASS | 90   |
+2026-07-18T09:00:17 | search    | test_filter_by_price         | FAIL | 260  | TimeoutError: results did not load in 5s
+2026-07-18T09:00:18 | search    | test_sort_by_rating          | PASS | 150  |

@@ -1,0 +1,15 @@
+
+# 1. Number Guessing Game (Random numbers & Conditions)
+import random
+
+secret = random.randint(1, 20)
+print("Guess the number between 1 and 20!")
+for attempts in range(1, 6):
+    guess = int(input(f"Attempt {attempts}: "))
+    if guess == secret:
+        print(f"You won in {attempts} tries!")
+        break
+    print("Too high!" if guess > secret else "Too low!")
+else:
+    print(f"Game over. The number was {secret}.")
+
